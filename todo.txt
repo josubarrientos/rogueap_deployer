@@ -1,0 +1,12 @@
+1. #airmon-ng check
+
+and the process I needed to kill was wpa_supplicant so
+
+2. #killall wpa_supplicant
+
+I had to run this command to successfully start hostapd
+
+3. #hostapd /etc/hostapd/hostapd.conf
+
+    instead of the more common way service hostapd start which always failed.
+
